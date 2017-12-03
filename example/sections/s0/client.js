@@ -3,7 +3,9 @@ const run = require('@cycle/run').run
 
 module.exports = function () {
 
-  run(require('./app.js'), {
+  const app = require('./app.js')
+
+  run(app, {
     DOM: makeDOMDriver('#section')
   })
 
