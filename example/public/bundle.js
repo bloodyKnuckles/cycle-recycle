@@ -35,13 +35,15 @@ const run = require('@cycle/run').run
 
 module.exports = function () {
 
-  run(require('./app.js'), {
+  const app = require('./app')
+
+  run(app, {
     DOM: makeDOMDriver('#section')
   })
 
 }
 
-},{"./app.js":2,"@cycle/dom":19,"@cycle/run":29}],4:[function(require,module,exports){
+},{"./app":2,"@cycle/dom":19,"@cycle/run":29}],4:[function(require,module,exports){
 const xs = require('xstream').default
 const div = require('@cycle/dom').div
 
@@ -55,7 +57,7 @@ module.exports = (sources)  => {
 
 },{"@cycle/dom":19,"xstream":120}],5:[function(require,module,exports){
 arguments[4][3][0].apply(exports,arguments)
-},{"./app.js":4,"@cycle/dom":19,"@cycle/run":29,"dup":3}],6:[function(require,module,exports){
+},{"./app":4,"@cycle/dom":19,"@cycle/run":29,"dup":3}],6:[function(require,module,exports){
 const xs = require('xstream').default
 const div = require('@cycle/dom').div
 
@@ -69,7 +71,7 @@ module.exports = (sources)  => {
 
 },{"@cycle/dom":19,"xstream":120}],7:[function(require,module,exports){
 arguments[4][3][0].apply(exports,arguments)
-},{"./app.js":6,"@cycle/dom":19,"@cycle/run":29,"dup":3}],8:[function(require,module,exports){
+},{"./app":6,"@cycle/dom":19,"@cycle/run":29,"dup":3}],8:[function(require,module,exports){
 module.exports = function makeRecycleDriver () {
   return function (recycle$) {
     recycle$.addListener({
