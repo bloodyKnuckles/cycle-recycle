@@ -10,7 +10,7 @@ See the [example](https://github.com/bloodyKnuckles/cycle-recycle/tree/master/ex
 To use:
 ```
 git clone https://github.com/bloodyKnuckles/cycle-recycle.git
-cd cycle-recyle
+cd cycle-recycle
 npm install
 npm run-script build
 open example/public/index.html
