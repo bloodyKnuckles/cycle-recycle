@@ -1,0 +1,33 @@
+{
+  "name": "cycle-recycle",
+  "version": "0.0.1",
+  "description": "Run a separate cycle app in a driver.",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify -t require-globify example/client.js > example/public/bundle.js"
+  },
+  "author": "Jay Scott ANDERSON",
+  "license": "",
+  "dependencies": {
+    "@cycle/dom": "^20.1.0",
+    "@cycle/run": "^4.0.0",
+    "xstream": "^11.0.0"
+  },
+  "devDependencies": {
+    "require-globify": "^1.4.1"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bloodyKnuckles/cycle-recycle.git"
+  },
+  "keywords": [
+    "cyclejs"
+  ],
+  "bugs": {
+    "url": "https://github.com/bloodyKnuckles/cycle-recycle/issues"
+  },
+  "homepage": "https://github.com/bloodyKnuckles/cycle-recycle#readme"
+}
