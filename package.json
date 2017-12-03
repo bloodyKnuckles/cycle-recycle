@@ -1,6 +1,6 @@
 {
   "name": "cycle-recycle",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Run a separate cycle app in a driver.",
   "main": "index.js",
   "scripts": {
